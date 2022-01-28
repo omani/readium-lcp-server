@@ -109,10 +109,7 @@ func (p Packager) genKey(r *Result) {
 		return
 	}
 
-	uid, err := uuid.NewV4()
-	if err != nil {
-		return
-	}
+	uid := uuid.NewV4()
 	r.ID = uid.String()
 }
 

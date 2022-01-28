@@ -474,10 +474,7 @@ func (pManager PurchaseManager) Add(p Purchase) error {
 	}
 
 	// Create uuid
-	uid, err_u := uuid.NewV4()
-	if err_u != nil {
-		return err_u
-	}
+	uid := uuid.NewV4()
 	p.UUID = uid.String()
 
 	_, err = add.Exec(

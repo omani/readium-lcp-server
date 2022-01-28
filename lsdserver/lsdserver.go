@@ -20,6 +20,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
+	licensestatuses "github.com/omani/readium-lcp-server/license_statuses"
 	lsdserver "github.com/omani/readium-lcp-server/lsdserver/server"
 
 	"github.com/omani/readium-lcp-server/config"

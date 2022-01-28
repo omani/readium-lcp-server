@@ -326,10 +326,7 @@ func main() {
 	}
 
 	if *contentid == "" { // contentID not set -> generate a new one
-		uid, err := uuid.NewV4()
-		if err != nil {
-			exitWithError(pub, err, 20)
-		}
+		uid := uuid.NewV4()
 		*contentid = uid.String()
 	}
 	pub.ContentID = *contentid

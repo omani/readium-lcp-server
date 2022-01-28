@@ -144,10 +144,7 @@ func (pubManager PublicationManager) CheckByTitle(title string) (int64, error) {
 func encryptPublication(inputPath string, pub Publication, pubManager PublicationManager) error {
 
 	// generate a new uuid; this will be the content id in the lcp server
-	uid, err := uuid.NewV4()
-	if err != nil {
-		return err
-	}
+	uid := uuid.NewV4()
 	contentUUID := uid.String()
 	if len(pub.UUID) > 0 {
 		contentUUID = pub.UUID
@@ -168,12 +165,17 @@ func encryptPublication(inputPath string, pub Publication, pubManager Publicatio
 	// encrypt the master file found at inputPath, write in the temp file, in the "encrypted repository"
 	var encryptedPub encrypt.EncryptionArtifact
 	var contentType string
+	var err error
 
 	switch filepath.Ext(inputPath) {
 	// process EPUB files
 	case ".epub":
 		contentType = epub.ContentType_EPUB
 		encryptedPub, err = encrypt.EncryptEpub(inputPath, outputPath)
+		if err != nil {
+			log.Printf("Error encrypting webpub: %s", err)
+			return err
+		}
 
 		// process PDF files
 	case ".pdf":
