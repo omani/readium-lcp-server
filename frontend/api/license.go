@@ -12,10 +12,10 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/readium/readium-lcp-server/api"
-	"github.com/readium/readium-lcp-server/frontend/webpublication"
-	"github.com/readium/readium-lcp-server/frontend/webpurchase"
-	"github.com/readium/readium-lcp-server/problem"
+	"github.com/omani/readium-lcp-server/api"
+	"github.com/omani/readium-lcp-server/frontend/webpublication"
+	"github.com/omani/readium-lcp-server/frontend/webpurchase"
+	"github.com/omani/readium-lcp-server/problem"
 )
 
 // GetFilteredLicenses searches licenses activated by more than n devices

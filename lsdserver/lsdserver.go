@@ -16,17 +16,16 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/abbot/go-http-auth"
+	auth "github.com/abbot/go-http-auth"
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
+	lsdserver "github.com/omani/readium-lcp-server/lsdserver/server"
 
-	"github.com/readium/readium-lcp-server/config"
-	"github.com/readium/readium-lcp-server/license_statuses"
-	"github.com/readium/readium-lcp-server/localization"
-	"github.com/readium/readium-lcp-server/logging"
-	"github.com/readium/readium-lcp-server/lsdserver/server"
-	"github.com/readium/readium-lcp-server/transactions"
+	"github.com/omani/readium-lcp-server/config"
+	"github.com/omani/readium-lcp-server/localization"
+	"github.com/omani/readium-lcp-server/logging"
+	"github.com/omani/readium-lcp-server/transactions"
 )
 
 func dbFromURI(uri string) (string, string) {

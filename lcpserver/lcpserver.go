@@ -42,12 +42,12 @@ import (
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
 
-	"github.com/readium/readium-lcp-server/config"
-	"github.com/readium/readium-lcp-server/index"
-	lcpserver "github.com/readium/readium-lcp-server/lcpserver/server"
-	"github.com/readium/readium-lcp-server/license"
-	"github.com/readium/readium-lcp-server/pack"
-	"github.com/readium/readium-lcp-server/storage"
+	"github.com/omani/readium-lcp-server/config"
+	"github.com/omani/readium-lcp-server/index"
+	lcpserver "github.com/omani/readium-lcp-server/lcpserver/server"
+	"github.com/omani/readium-lcp-server/license"
+	"github.com/omani/readium-lcp-server/pack"
+	"github.com/omani/readium-lcp-server/storage"
 )
 
 func dbFromURI(uri string) (string, string) {

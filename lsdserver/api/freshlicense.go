@@ -15,10 +15,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/readium/readium-lcp-server/api"
-	"github.com/readium/readium-lcp-server/config"
-	"github.com/readium/readium-lcp-server/license"
-	"github.com/readium/readium-lcp-server/problem"
+	"github.com/omani/readium-lcp-server/api"
+	"github.com/omani/readium-lcp-server/config"
+	"github.com/omani/readium-lcp-server/license"
+	"github.com/omani/readium-lcp-server/problem"
 )
 
 // UserData represents the payload requested to the CMS.

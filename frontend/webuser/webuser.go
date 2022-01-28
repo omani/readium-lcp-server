@@ -31,8 +31,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/readium/readium-lcp-server/config"
-	"github.com/satori/go.uuid"
+	"github.com/omani/readium-lcp-server/config"
+	uuid "github.com/satori/go.uuid"
 )
 
 //ErrNotFound error trown when user is not found

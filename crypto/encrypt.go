@@ -21,7 +21,7 @@
 // LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 // ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-// SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+// SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package crypto
 
@@ -29,7 +29,8 @@ import (
 	"crypto/aes"
 	"io"
 )
-//"github.com/readium/readium-lcp-server/config"
+
+//"github.com/omani/readium-lcp-server/config"
 // FOR: config.Config.AES256_CBC_OR_GCM
 
 type Encrypter interface {
@@ -43,7 +44,7 @@ type Decrypter interface {
 }
 
 func NewAESEncrypter_PUBLICATION_RESOURCES() Encrypter {
-	
+
 	return NewAESCBCEncrypter()
 
 	// DISABLED, see https://github.com/readium/readium-lcp-server/issues/109

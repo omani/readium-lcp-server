@@ -17,16 +17,16 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/readium/readium-lcp-server/api"
-	"github.com/readium/readium-lcp-server/config"
-	apilcp "github.com/readium/readium-lcp-server/lcpserver/api"
-	"github.com/readium/readium-lcp-server/license"
-	licensestatuses "github.com/readium/readium-lcp-server/license_statuses"
-	"github.com/readium/readium-lcp-server/localization"
-	"github.com/readium/readium-lcp-server/logging"
-	"github.com/readium/readium-lcp-server/problem"
-	"github.com/readium/readium-lcp-server/status"
-	"github.com/readium/readium-lcp-server/transactions"
+	"github.com/omani/readium-lcp-server/api"
+	"github.com/omani/readium-lcp-server/config"
+	apilcp "github.com/omani/readium-lcp-server/lcpserver/api"
+	"github.com/omani/readium-lcp-server/license"
+	licensestatuses "github.com/omani/readium-lcp-server/license_statuses"
+	"github.com/omani/readium-lcp-server/localization"
+	"github.com/omani/readium-lcp-server/logging"
+	"github.com/omani/readium-lcp-server/problem"
+	"github.com/omani/readium-lcp-server/status"
+	"github.com/omani/readium-lcp-server/transactions"
 )
 
 // Server interface

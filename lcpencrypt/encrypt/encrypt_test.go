@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/readium/readium-lcp-server/license"
+	"github.com/omani/readium-lcp-server/license"
 )
 
 func TestEncryptEPUB(t *testing.T) {

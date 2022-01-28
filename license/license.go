@@ -15,11 +15,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/readium/readium-lcp-server/api"
-	"github.com/readium/readium-lcp-server/config"
-	"github.com/readium/readium-lcp-server/crypto"
-	"github.com/readium/readium-lcp-server/index"
-	"github.com/readium/readium-lcp-server/sign"
+	"github.com/omani/readium-lcp-server/api"
+	"github.com/omani/readium-lcp-server/config"
+	"github.com/omani/readium-lcp-server/crypto"
+	"github.com/omani/readium-lcp-server/index"
+	"github.com/omani/readium-lcp-server/sign"
 )
 
 type Key struct {

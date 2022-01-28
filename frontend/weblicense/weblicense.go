@@ -33,7 +33,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/readium/readium-lcp-server/config"
+	"github.com/omani/readium-lcp-server/config"
 )
 
 // License status

@@ -12,8 +12,8 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/readium/readium-lcp-server/license"
-	"github.com/readium/readium-lcp-server/rwpm"
+	"github.com/omani/readium-lcp-server/license"
+	"github.com/omani/readium-lcp-server/rwpm"
 )
 
 // RPFReader is a Readium Package reader

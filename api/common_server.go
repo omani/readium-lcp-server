@@ -30,14 +30,14 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/abbot/go-http-auth"
+	auth "github.com/abbot/go-http-auth"
 	"github.com/gorilla/mux"
 	"github.com/jeffbmartinez/delay"
 	"github.com/rs/cors"
 	"github.com/technoweenie/grohl"
 	"github.com/urfave/negroni"
 
-	"github.com/readium/readium-lcp-server/problem"
+	"github.com/omani/readium-lcp-server/problem"
 )
 
 const (

@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/readium/readium-lcp-server/config"
-	"github.com/readium/readium-lcp-server/status"
+	"github.com/omani/readium-lcp-server/config"
+	"github.com/omani/readium-lcp-server/status"
 )
 
 // ErrNotFound is license status not found
